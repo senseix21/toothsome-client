@@ -34,7 +34,7 @@ const HeroInfo = () => {
         <div className='grid lg:grid-cols-3 gap-10  mx-auto my-10'>
             {
                 InfoData.map(info =>
-                    <div className={`card p-6 lg:card-side card-normal bg-base-100 shadow-xl ${info.bg} text-white text-center`} >
+                    <div key={info.index} className={`card p-6 lg:card-side card-normal bg-base-100 shadow-xl ${info.bg} text-white text-center`} >
                         <figure className="">
                             <img src={info.icon} alt="" />
                         </figure>

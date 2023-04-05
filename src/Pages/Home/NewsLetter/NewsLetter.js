@@ -21,7 +21,7 @@ const NewsLetter = () => {
                             <textarea placeholder="message" className="textarea textarea-bordered textarea-md w-full max-w-xs" ></textarea>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">SUBMIT</button>
                         </div>
                     </form>
                 </div>

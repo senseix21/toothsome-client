@@ -1,6 +1,5 @@
 import React from 'react';
 import quote from '../../../assets/icons/quote.svg';
-import { FaQuoteRight } from 'react-icons/fa';
 import user from '../../../assets/images/people1.png';
 
 const Review = () => {
@@ -28,20 +27,20 @@ const Review = () => {
         },
     ];
     return (
-        <div className='my-10'>
+        <div className='my-10 mx-14'>
             <div className="flex items-center justify-between ">
                 <div>
                     <h4 className='font-bold text-primary'>Testomonials</h4>
                     <h3 className='text-3xl font-bold'>What Our Patients Says</h3>
                 </div>
                 <img src={quote} className='w-14 lg:w-40' alt="" />
-                {/* <FaQuoteRight className='text-4xl' /> */}
 
             </div>
             <div className='grid lg:grid-cols-3 gap-5'>
                 {
                     reviews.map(review =>
-                        <div className="card w-96 bg-base-100 shadow-xl mx-auto">
+
+                        <div key={review.index} className="card  bg-base-100 shadow-xl mx-auto">
                             <div className="card-body">
                                 <p>{review.desc}</p>
                                 <div className='flex items-center justify-around'>
@@ -50,7 +49,8 @@ const Review = () => {
                                 </div>
 
                             </div>
-                        </div>)
+                        </div>
+                    )
                 }
             </div>
 

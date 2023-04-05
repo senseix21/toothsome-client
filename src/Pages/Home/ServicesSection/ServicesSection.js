@@ -32,7 +32,7 @@ const ServicesSection = () => {
             <div className='grid lg:grid-cols-3 gap-5 my-5'>
                 {
                     servicesData.map(service =>
-                        <div className="card bg-base-100 shadow-xl">
+                        <div key={service.index} className="card bg-base-100 shadow-xl">
                             <figure className="px-20 pt-10">
                                 <img src={service.img} alt="Shoes" className="rounded-xl" />
                             </figure>
